@@ -17,24 +17,24 @@ public class B2751
 	static void quickSort(int[] data, int start, int end)
 	{
 		if (start >= end) return;
-		int pivot = start;
+		int KEY = start;
 		int i = start;
 		int j = end;
 		while (i <= j)
 		{
-			while (i <= end && data[i] <= data[pivot])
+			while (i <= end && data[KEY] >= data[i])
 			{
 				i++;
 			}
-			while (j >= pivot && data[j] > data[pivot])
+			while (j > start && data[KEY] <= data[j])
 			{
 				j--;
 			}
 			if (i > j)
 			{
 				int tmp = data[j];
-				data[j] = data[pivot];
-				data[pivot] = tmp;
+				data[j] = data[KEY];
+				data[KEY] = tmp;
 			}
 			else
 			{
