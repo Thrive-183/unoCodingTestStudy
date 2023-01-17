@@ -1,4 +1,4 @@
-package StudyWithVideo;
+package StudyWithVideo.Sort;
 
 class InsertionSort
 {

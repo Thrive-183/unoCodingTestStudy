@@ -1,4 +1,4 @@
-package StudyWithVideo;
+package StudyWithVideo.Sort;
 
 class QuickSort
 {
@@ -64,7 +64,7 @@ class QuickSort2
 		quickSort(arr, 0, arr.length - 1);
 		for (int i : arr)
 		{
-			System.out.println(i);
+			System.out.println(i); 
 		}
 	}
 	private static void quickSort(int[] arr, int start, int end)
